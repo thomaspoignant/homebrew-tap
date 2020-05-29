@@ -7,11 +7,11 @@ class ApiScenario < Formula
 
   if OS.mac?
     url "https://github.com/thomaspoignant/api-scenario/releases/download/v0.0.1/api-scenario_0.0.1_Darwin_x86_64.tar.gz"
-    sha256 "bf1b39f2d115d9e7ec9223102f83140f944f2b8416446eafd165fa0a140142d2"
+    sha256 "eb86504886d869eb071dd141da84fc74020f6980e8ae7a01598d599d89bd5988"
   elsif OS.linux?
     if Hardware::CPU.intel?
       url "https://github.com/thomaspoignant/api-scenario/releases/download/v0.0.1/api-scenario_0.0.1_Linux_x86_64.tar.gz"
-      sha256 "ba3f531ed2333f10c270857468610a57c010331d7431e351161f7042e1035e5b"
+      sha256 "524af355ee6426b2bd07a6f8913ade4235ddcf76e3b1be0f477117bd6715a225"
     end
   end
 
