@@ -6,12 +6,12 @@ class ApiScenario < Formula
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/thomaspoignant/api-scenario/releases/download/0.0.1/api-scenario_0.0.1_Darwin_x86_64.tar.gz"
-    sha256 "0b1de9d0f2c70a19472db757d02f40b8ce6d74fe40d676c8bf301e9379ddca6d"
+    url "https://github.com/thomaspoignant/api-scenario/releases/download/v0.0.1/api-scenario_0.0.1_Darwin_x86_64.tar.gz"
+    sha256 "bf1b39f2d115d9e7ec9223102f83140f944f2b8416446eafd165fa0a140142d2"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/thomaspoignant/api-scenario/releases/download/0.0.1/api-scenario_0.0.1_Linux_x86_64.tar.gz"
-      sha256 "cf92f5dfb639c890e225e23c795edf4dfd39dd0139cf46d8b2c73741559e20c1"
+      url "https://github.com/thomaspoignant/api-scenario/releases/download/v0.0.1/api-scenario_0.0.1_Linux_x86_64.tar.gz"
+      sha256 "ba3f531ed2333f10c270857468610a57c010331d7431e351161f7042e1035e5b"
     end
   end
 
