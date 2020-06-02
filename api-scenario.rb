@@ -7,19 +7,19 @@ class ApiScenario < Formula
 
   if OS.mac?
     url "https://github.com/thomaspoignant/api-scenario/releases/download/v0.0.1/api-scenario_0.0.1_Darwin_x86_64.tar.gz"
-    sha256 "e834787cff47ab6e66703af47d8bd7fd44a8804054d450989a6deb4271e1b1d1"
+    sha256 "d084091f6793bc4c44c4749aa7492b596aafd4aa4db6d44b992f2e3c0be48732"
   elsif OS.linux?
     if Hardware::CPU.intel?
       url "https://github.com/thomaspoignant/api-scenario/releases/download/v0.0.1/api-scenario_0.0.1_Linux_x86_64.tar.gz"
-      sha256 "740f3d3c86929136228561c7b351ec0bbef7f9bc4c82b31783e0b6f5a01eb13b"
+      sha256 "b314af3ab98de2b4ce2dccce2b3b40dfaa3dfe2a0230bb38c3cbba2819d6207d"
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
         url "https://github.com/thomaspoignant/api-scenario/releases/download/v0.0.1/api-scenario_0.0.1_Linux_arm64.tar.gz"
-        sha256 "41d092cd66efb25eac7e6cdc3c90cf5575897ec48f9a9adc972c1e67d14451a6"
+        sha256 "85c27bc31c391cd629f064355027bf45b6f50e568996146bd9317417a5e9f8dd"
       else
         url "https://github.com/thomaspoignant/api-scenario/releases/download/v0.0.1/api-scenario_0.0.1_Linux_armv6.tar.gz"
-        sha256 "49e2019318fc0346e9fab465f8b1ece5c459e9e649b3b391ff25bb36e7d375bf"
+        sha256 "b352df0ed68475c6ccf8cc7ea06739f324a01dc8c7cfe06a807b732de21cdaff"
       end
     end
   end
