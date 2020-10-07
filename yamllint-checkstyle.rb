@@ -2,24 +2,24 @@
 class YamllintCheckstyle < Formula
   desc "Convert yamllint output to checkstyle format."
   homepage "https://github.com/thomaspoignant/yamllint-checkstyle"
-  version "1.0.0"
+  version "1.0.1"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/thomaspoignant/yamllint-checkstyle/releases/download/v1.0.0/yamllint-checkstyle_1.0.0_Darwin_x86_64.tar.gz"
-    sha256 "0ee895cc36e7c951d88656488e430b678248bee49e9cf946e39112a8fe20c4b0"
+    url "https://github.com/thomaspoignant/yamllint-checkstyle/releases/download/v1.0.1/yamllint-checkstyle_1.0.1_Darwin_x86_64.tar.gz"
+    sha256 "a0bc09211595cabf0609853d71aa7b30ee2cf51ed3dccfc1a207b3d54b1d9bf6"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/thomaspoignant/yamllint-checkstyle/releases/download/v1.0.0/yamllint-checkstyle_1.0.0_Linux_x86_64.tar.gz"
-      sha256 "6d0fb08d22c7905faa3d72c9e2baae4c112c94ddbe3f16313fa5c3660025987e"
+      url "https://github.com/thomaspoignant/yamllint-checkstyle/releases/download/v1.0.1/yamllint-checkstyle_1.0.1_Linux_x86_64.tar.gz"
+      sha256 "1d5cdc5477cc0825d31bf1b7019ce32f9a898b1890f29159dc7e5972514dde05"
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/thomaspoignant/yamllint-checkstyle/releases/download/v1.0.0/yamllint-checkstyle_1.0.0_Linux_arm64.tar.gz"
-        sha256 "f047e1a4f0efb7a9539db93a6bea4909b6d165ab5a0cda755bd1bd6c2f517bfb"
+        url "https://github.com/thomaspoignant/yamllint-checkstyle/releases/download/v1.0.1/yamllint-checkstyle_1.0.1_Linux_arm64.tar.gz"
+        sha256 "4e08ee180ed6c02c02142a30125eebf4908e9106b69d44e0c9991c42689afd6c"
       else
-        url "https://github.com/thomaspoignant/yamllint-checkstyle/releases/download/v1.0.0/yamllint-checkstyle_1.0.0_Linux_armv6.tar.gz"
-        sha256 "6bee41259e79ed472a1778928ece399da4bf84f0350d45e69d29426e98da583b"
+        url "https://github.com/thomaspoignant/yamllint-checkstyle/releases/download/v1.0.1/yamllint-checkstyle_1.0.1_Linux_armv6.tar.gz"
+        sha256 "f864ca6bb5849f1ac9594c8039de84caa7c502b67b7bb3a94cd0e10d7cd74328"
       end
     end
   end
