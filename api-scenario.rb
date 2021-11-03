@@ -3,7 +3,6 @@ class ApiScenario < Formula
   desc "Scenario API testing from the command line."
   homepage "https://github.com/thomaspoignant/api-scenario"
   version "0.3.0"
-  bottle :unneeded
 
   if OS.mac?
     url "https://github.com/thomaspoignant/api-scenario/releases/download/v0.3.0/api-scenario_0.3.0_Darwin_x86_64.tar.gz"
