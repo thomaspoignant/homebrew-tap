@@ -6,7 +6,6 @@ class YamllintCheckstyle < Formula
   desc "Convert yamllint output to checkstyle format."
   homepage "https://github.com/thomaspoignant/yamllint-checkstyle"
   version "1.0.2"
-  bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
