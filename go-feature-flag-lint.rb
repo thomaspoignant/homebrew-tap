@@ -8,17 +8,17 @@ class GoFeatureFlagLint < Formula
   version "1.8.1"
 
   on_macos do
-    if Hardware::CPU.intel?
-      url "https://github.com/thomaspoignant/go-feature-flag/releases/download/v1.8.1/go-feature-flag-lint_1.8.1_Darwin_x86_64.tar.gz"
-      sha256 "be37f60aea685bb03cdc26d99596a3f626885e7ea0a8a27837f38cf1531926c3"
+    if Hardware::CPU.arm?
+      url "https://github.com/thomaspoignant/go-feature-flag/releases/download/v1.8.1/go-feature-flag-lint_1.8.1_Darwin_arm64.tar.gz"
+      sha256 "987e248abaae390c962b8318a65f02ee2114ffeb1d90fa77062aed7ecbeecfb1"
 
       def install
         bin.install "go-feature-flag-lint"
       end
     end
-    if Hardware::CPU.arm?
-      url "https://github.com/thomaspoignant/go-feature-flag/releases/download/v1.8.1/go-feature-flag-lint_1.8.1_Darwin_arm64.tar.gz"
-      sha256 "d34988b0ed1ff7edbf237f55787f0ca1f051b32bec9ec42252ed4019fddd2eef"
+    if Hardware::CPU.intel?
+      url "https://github.com/thomaspoignant/go-feature-flag/releases/download/v1.8.1/go-feature-flag-lint_1.8.1_Darwin_x86_64.tar.gz"
+      sha256 "dc161bb9cc382da5d03726bd288ad84a87c4424966fb467af2c9868162c88319"
 
       def install
         bin.install "go-feature-flag-lint"
@@ -29,7 +29,7 @@ class GoFeatureFlagLint < Formula
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/thomaspoignant/go-feature-flag/releases/download/v1.8.1/go-feature-flag-lint_1.8.1_Linux_arm64.tar.gz"
-      sha256 "a01ddabbc44dc7fe78b32b57f6651220147577c897c5f98d4d1c01139f6f9fbe"
+      sha256 "9ebc0ead7b21f37face76ae2f9e5788e3a70ef3d849234afded3bc58c8f5c2d9"
 
       def install
         bin.install "go-feature-flag-lint"
@@ -37,7 +37,7 @@ class GoFeatureFlagLint < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/thomaspoignant/go-feature-flag/releases/download/v1.8.1/go-feature-flag-lint_1.8.1_Linux_x86_64.tar.gz"
-      sha256 "486bd88992da600e8f0965ec7c6ac30314f3042c25c9c0e9c351818eb1fc5cfe"
+      sha256 "58b2d12d5ffea85d1be512664eb21bcfb55e4d15d5c242743c6210ad2a3106eb"
 
       def install
         bin.install "go-feature-flag-lint"
