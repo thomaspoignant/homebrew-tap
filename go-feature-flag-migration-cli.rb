@@ -5,20 +5,20 @@
 class GoFeatureFlagMigrationCli < Formula
   desc "A migration command line to move your feature flag configuration file from format GO Feature Flag v0.X to v1.X"
   homepage "https://github.com/thomaspoignant/go-feature-flag/cmd/migrationcli"
-  version "1.18.2"
+  version "1.19.0"
 
   on_macos do
-    if Hardware::CPU.intel?
-      url "https://github.com/thomaspoignant/go-feature-flag/releases/download/v1.18.2/go-feature-flag-migration-cli_1.18.2_Darwin_x86_64.tar.gz"
-      sha256 "276fa865cc2887c45edc97c9e1af873e487af22b6302d3bcdc01d4420a4e846a"
+    if Hardware::CPU.arm?
+      url "https://github.com/thomaspoignant/go-feature-flag/releases/download/v1.19.0/go-feature-flag-migration-cli_1.19.0_Darwin_arm64.tar.gz"
+      sha256 "e4a2fb3ec1609961365b97dc25fe643e5ed357c449950c5f09cd9c5c58ec667c"
 
       def install
         bin.install "go-feature-flag-migration-cli"
       end
     end
-    if Hardware::CPU.arm?
-      url "https://github.com/thomaspoignant/go-feature-flag/releases/download/v1.18.2/go-feature-flag-migration-cli_1.18.2_Darwin_arm64.tar.gz"
-      sha256 "45095428ed812d916dfb4bacedcc84c60df0df1b3486b07d52e7b25cc27b2a24"
+    if Hardware::CPU.intel?
+      url "https://github.com/thomaspoignant/go-feature-flag/releases/download/v1.19.0/go-feature-flag-migration-cli_1.19.0_Darwin_x86_64.tar.gz"
+      sha256 "29096c9b104c663e05ab960fb0387a0f2b27a9db8464ff4282809a9884af6098"
 
       def install
         bin.install "go-feature-flag-migration-cli"
@@ -28,16 +28,16 @@ class GoFeatureFlagMigrationCli < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/thomaspoignant/go-feature-flag/releases/download/v1.18.2/go-feature-flag-migration-cli_1.18.2_Linux_x86_64.tar.gz"
-      sha256 "a0d019954fcf9195c18ea7b7477447421875d3aeeda826a4539dddb963bb3403"
+      url "https://github.com/thomaspoignant/go-feature-flag/releases/download/v1.19.0/go-feature-flag-migration-cli_1.19.0_Linux_x86_64.tar.gz"
+      sha256 "0573c125c2d65fa6b94e4fc27994be26bb9c11475a81ec66c2c6c091a3efb8f4"
 
       def install
         bin.install "go-feature-flag-migration-cli"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/thomaspoignant/go-feature-flag/releases/download/v1.18.2/go-feature-flag-migration-cli_1.18.2_Linux_arm64.tar.gz"
-      sha256 "64af8f7ecb80e5bed1306c6f3d73fd9f8024510d95b240873def196f0e7ebe3b"
+      url "https://github.com/thomaspoignant/go-feature-flag/releases/download/v1.19.0/go-feature-flag-migration-cli_1.19.0_Linux_arm64.tar.gz"
+      sha256 "f56fac02c167de9ee7204dd6ff0b4e925d025f800699e554d83fc3d45bc8c23c"
 
       def install
         bin.install "go-feature-flag-migration-cli"
