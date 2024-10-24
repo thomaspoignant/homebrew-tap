@@ -5,20 +5,20 @@
 class GoFeatureFlagRelayProxy < Formula
   desc "A stand alone server to run GO Feature Flag"
   homepage "https://gofeatureflag.org/docs/relay_proxy"
-  version "1.36.1"
+  version "1.37.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/thomaspoignant/go-feature-flag/releases/download/v1.36.1/go-feature-flag-relay-proxy_1.36.1_Darwin_x86_64.tar.gz"
-      sha256 "51b082d250edb9d69add8572c68b306bee6ee1efc59b048fea14754800b19fcf"
+      url "https://github.com/thomaspoignant/go-feature-flag/releases/download/v1.37.0/go-feature-flag-relay-proxy_1.37.0_Darwin_x86_64.tar.gz"
+      sha256 "c5d48ca116d3a3d18badbeec9012d7165121f3d1facddd40d7755b6cc9b4a36b"
 
       def install
         bin.install "go-feature-flag-relay-proxy"
       end
     end
     on_arm do
-      url "https://github.com/thomaspoignant/go-feature-flag/releases/download/v1.36.1/go-feature-flag-relay-proxy_1.36.1_Darwin_arm64.tar.gz"
-      sha256 "8cd15b798ee7feb7730453383cdcac6fc4d654b215f701c2a6d783a3fdfa3582"
+      url "https://github.com/thomaspoignant/go-feature-flag/releases/download/v1.37.0/go-feature-flag-relay-proxy_1.37.0_Darwin_arm64.tar.gz"
+      sha256 "14cfdedbcea1da07b5304967620b75f8ee9f9a5d6c44045cf65aa4c288427d7c"
 
       def install
         bin.install "go-feature-flag-relay-proxy"
@@ -29,8 +29,8 @@ class GoFeatureFlagRelayProxy < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/thomaspoignant/go-feature-flag/releases/download/v1.36.1/go-feature-flag-relay-proxy_1.36.1_Linux_x86_64.tar.gz"
-        sha256 "7084e06430aaeaa1c75f6e94ced6000a0c3f72ade815f36a9cc76a121219d64b"
+        url "https://github.com/thomaspoignant/go-feature-flag/releases/download/v1.37.0/go-feature-flag-relay-proxy_1.37.0_Linux_x86_64.tar.gz"
+        sha256 "90d44939c922bae4975805ed2fcd72f1622be76551e81454cc971f374af8cf4e"
 
         def install
           bin.install "go-feature-flag-relay-proxy"
@@ -39,8 +39,8 @@ class GoFeatureFlagRelayProxy < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/thomaspoignant/go-feature-flag/releases/download/v1.36.1/go-feature-flag-relay-proxy_1.36.1_Linux_arm64.tar.gz"
-        sha256 "cb169459a8f342489927a721fc5bae0c20822bb137cf73fbaa4fa38b14aa5861"
+        url "https://github.com/thomaspoignant/go-feature-flag/releases/download/v1.37.0/go-feature-flag-relay-proxy_1.37.0_Linux_arm64.tar.gz"
+        sha256 "9e687dedb60b40c3ed586ce030fbb1e663f592341fc24a6e0d931383c0f01cb1"
 
         def install
           bin.install "go-feature-flag-relay-proxy"
