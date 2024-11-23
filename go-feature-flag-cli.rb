@@ -10,7 +10,7 @@ class GoFeatureFlagCli < Formula
   on_macos do
     on_intel do
       url "https://github.com/thomaspoignant/go-feature-flag/releases/download/v1.39.0/go-feature-flag-cli_1.39.0_Darwin_x86_64.tar.gz"
-      sha256 "b9643c97ed66dc474de9ee03c3ce08e0b6e398abaa7d7e886bd64b24c2a8b489"
+      sha256 "85396f562214117275df41d1fdd4ce01f0a94a325e7607d4402f65bc77f7fc56"
 
       def install
         bin.install "go-feature-flag-cli"
@@ -18,7 +18,7 @@ class GoFeatureFlagCli < Formula
     end
     on_arm do
       url "https://github.com/thomaspoignant/go-feature-flag/releases/download/v1.39.0/go-feature-flag-cli_1.39.0_Darwin_arm64.tar.gz"
-      sha256 "6f8b48e9dd0af2d944acc87033edea0faa41919e747bb863935503d25bf13d27"
+      sha256 "160524b5d219ac29ce2ccbf0a3fd099809b033b6ecb6cf8fba63611bcc68c6ee"
 
       def install
         bin.install "go-feature-flag-cli"
@@ -30,7 +30,7 @@ class GoFeatureFlagCli < Formula
     on_intel do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/thomaspoignant/go-feature-flag/releases/download/v1.39.0/go-feature-flag-cli_1.39.0_Linux_x86_64.tar.gz"
-        sha256 "a73b4cc3e9808a3f24fae9cde3e0c190985ae71dd7ad85dc5201f84212e1ba8b"
+        sha256 "5a0e72514daa70347a8d34684fa8688b4e5cf2331b137a10c3c5875251725227"
 
         def install
           bin.install "go-feature-flag-cli"
@@ -40,7 +40,7 @@ class GoFeatureFlagCli < Formula
     on_arm do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/thomaspoignant/go-feature-flag/releases/download/v1.39.0/go-feature-flag-cli_1.39.0_Linux_arm64.tar.gz"
-        sha256 "77d7e4f8c0cd85f0abf371b90acf9379e1aa8e6249be00b6605edd3e124baa21"
+        sha256 "d0ff38954db278b697ae6130461a4a2111fa23592513a15e2c7709c8d00257b0"
 
         def install
           bin.install "go-feature-flag-cli"
