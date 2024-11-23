@@ -10,7 +10,7 @@ class GoFeatureFlagLint < Formula
   on_macos do
     on_intel do
       url "https://github.com/thomaspoignant/go-feature-flag/releases/download/v1.39.0/go-feature-flag-lint_1.39.0_Darwin_x86_64.tar.gz"
-      sha256 "6bb5aba5133c2311c7ee58eecbe040b9f6d3502b0a6e1b58821684da654a0f30"
+      sha256 "7f871c0b9f6d414be680857a0d78c1abc0d923e61a54ff3c28e5dd8ecef787d8"
 
       def install
         bin.install "go-feature-flag-lint"
@@ -18,7 +18,7 @@ class GoFeatureFlagLint < Formula
     end
     on_arm do
       url "https://github.com/thomaspoignant/go-feature-flag/releases/download/v1.39.0/go-feature-flag-lint_1.39.0_Darwin_arm64.tar.gz"
-      sha256 "8b2121b6e24d1005aa1fa619ea1baa8083b2c196b952c3842ff54ff0378149ce"
+      sha256 "6d6c03775bfbe6973267144206c08bdfa17dec7bfecdf2595854a5fb5a461e34"
 
       def install
         bin.install "go-feature-flag-lint"
@@ -30,7 +30,7 @@ class GoFeatureFlagLint < Formula
     on_intel do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/thomaspoignant/go-feature-flag/releases/download/v1.39.0/go-feature-flag-lint_1.39.0_Linux_x86_64.tar.gz"
-        sha256 "2aea655bb8d4d46974c0cdc820a46a4a8613b6d613675b1261cabe502347c98b"
+        sha256 "9c26568531c756e4d3f726d3f22298baf75038e45b44a1fc4eb6c47c4b872630"
 
         def install
           bin.install "go-feature-flag-lint"
@@ -40,7 +40,7 @@ class GoFeatureFlagLint < Formula
     on_arm do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/thomaspoignant/go-feature-flag/releases/download/v1.39.0/go-feature-flag-lint_1.39.0_Linux_arm64.tar.gz"
-        sha256 "11129d88cbb31e265130990e57d99b8453237dc4969811bb1897d90922001b9a"
+        sha256 "ed5315b083dbc256fa1ad9081ddec3402c0c13d9df4231323578496432c2c809"
 
         def install
           bin.install "go-feature-flag-lint"
