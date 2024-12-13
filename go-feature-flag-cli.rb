@@ -5,20 +5,20 @@
 class GoFeatureFlagCli < Formula
   desc "A command line tool to manage GO Feature Flag from your terminal"
   homepage "https://gofeatureflag.org/docs/tooling/cli"
-  version "1.39.1"
+  version "1.40.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/thomaspoignant/go-feature-flag/releases/download/v1.39.1/go-feature-flag-cli_1.39.1_Darwin_x86_64.tar.gz"
-      sha256 "96b8e74eb357aaf864b9bec13fbd73d2da7455342c62eb09fcfb055dbf1469a0"
+      url "https://github.com/thomaspoignant/go-feature-flag/releases/download/v1.40.0/go-feature-flag-cli_1.40.0_Darwin_x86_64.tar.gz"
+      sha256 "d38e6687b079d448f679135313cba90b87ad52a61999a95f87a55d52cc23fae4"
 
       def install
         bin.install "go-feature-flag-cli"
       end
     end
     on_arm do
-      url "https://github.com/thomaspoignant/go-feature-flag/releases/download/v1.39.1/go-feature-flag-cli_1.39.1_Darwin_arm64.tar.gz"
-      sha256 "925605999961dbc61915629724727a3c9dbdfe5d71e82db303d97f1720c12beb"
+      url "https://github.com/thomaspoignant/go-feature-flag/releases/download/v1.40.0/go-feature-flag-cli_1.40.0_Darwin_arm64.tar.gz"
+      sha256 "2d0405f79db5404a706a62f47c4a031e255206e42f4e846dc6ebbeb460a6a8aa"
 
       def install
         bin.install "go-feature-flag-cli"
@@ -29,8 +29,8 @@ class GoFeatureFlagCli < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/thomaspoignant/go-feature-flag/releases/download/v1.39.1/go-feature-flag-cli_1.39.1_Linux_x86_64.tar.gz"
-        sha256 "3677438c8e00cfb351acea5723dad7fdd2f1a37774da5802ccc5cec3ed71ca9e"
+        url "https://github.com/thomaspoignant/go-feature-flag/releases/download/v1.40.0/go-feature-flag-cli_1.40.0_Linux_x86_64.tar.gz"
+        sha256 "2cfb7f812ac03465c22721444f2fce41474126e7d28aaaafbfdbc964f89e4d36"
 
         def install
           bin.install "go-feature-flag-cli"
@@ -39,8 +39,8 @@ class GoFeatureFlagCli < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/thomaspoignant/go-feature-flag/releases/download/v1.39.1/go-feature-flag-cli_1.39.1_Linux_arm64.tar.gz"
-        sha256 "49e81b25d264c31a78e9ad9c36c054767d6c62e15512cdd97fdc24c3c5da2a4d"
+        url "https://github.com/thomaspoignant/go-feature-flag/releases/download/v1.40.0/go-feature-flag-cli_1.40.0_Linux_arm64.tar.gz"
+        sha256 "adf1368252a401179a95e68a6fb62c90e0fdcb34161d9df2a4ed39cf42fade7b"
 
         def install
           bin.install "go-feature-flag-cli"
