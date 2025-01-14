@@ -5,20 +5,20 @@
 class GoFeatureFlagLint < Formula
   desc "A command line tool to lint your feature flag configuration file"
   homepage "https://gofeatureflag.org/docs/tooling/linter"
-  version "1.40.0"
+  version "1.41.0"
 
   on_macos do
-    on_intel do
-      url "https://github.com/thomaspoignant/go-feature-flag/releases/download/v1.40.0/go-feature-flag-lint_1.40.0_Darwin_x86_64.tar.gz"
-      sha256 "9dfb638804688728a20afa8e41e1fd5f53a56b4c3f0c44901aeddfce93403daa"
+    if Hardware::CPU.intel?
+      url "https://github.com/thomaspoignant/go-feature-flag/releases/download/v1.41.0/go-feature-flag-lint_1.41.0_Darwin_x86_64.tar.gz"
+      sha256 "09a1abd8fe95e95461f774ea7169c02cb92fea6704d3e94df5170cc628fbdc3c"
 
       def install
         bin.install "go-feature-flag-lint"
       end
     end
-    on_arm do
-      url "https://github.com/thomaspoignant/go-feature-flag/releases/download/v1.40.0/go-feature-flag-lint_1.40.0_Darwin_arm64.tar.gz"
-      sha256 "1c21549a4679ce9c14ae78bf626fe43958797dd1f37c2c99cc80cd913ecd66fa"
+    if Hardware::CPU.arm?
+      url "https://github.com/thomaspoignant/go-feature-flag/releases/download/v1.41.0/go-feature-flag-lint_1.41.0_Darwin_arm64.tar.gz"
+      sha256 "466b9fce21db5354df5bc74334a6396f1dbfda52d3bde0761be6be4d320688c3"
 
       def install
         bin.install "go-feature-flag-lint"
@@ -27,20 +27,20 @@ class GoFeatureFlagLint < Formula
   end
 
   on_linux do
-    on_intel do
+    if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/thomaspoignant/go-feature-flag/releases/download/v1.40.0/go-feature-flag-lint_1.40.0_Linux_x86_64.tar.gz"
-        sha256 "dd6c5f409d63ed1c238797a6782ba91d7aae0be0ae85f3af72b4286716619dd0"
+        url "https://github.com/thomaspoignant/go-feature-flag/releases/download/v1.41.0/go-feature-flag-lint_1.41.0_Linux_x86_64.tar.gz"
+        sha256 "81bd3e2700145a2c3023f60d127322ea754b2a80fa9c4a8a0abcf656c68953fb"
 
         def install
           bin.install "go-feature-flag-lint"
         end
       end
     end
-    on_arm do
+    if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/thomaspoignant/go-feature-flag/releases/download/v1.40.0/go-feature-flag-lint_1.40.0_Linux_arm64.tar.gz"
-        sha256 "f5438e505e878440c03a2729d050031a1ddce3262db922bd2099b92bbd41e92a"
+        url "https://github.com/thomaspoignant/go-feature-flag/releases/download/v1.41.0/go-feature-flag-lint_1.41.0_Linux_arm64.tar.gz"
+        sha256 "6e1104102ad7ce5e1d5514788bcbea76de95217d65007aac1762c61eb840b2da"
 
         def install
           bin.install "go-feature-flag-lint"
