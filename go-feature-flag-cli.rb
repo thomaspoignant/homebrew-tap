@@ -5,20 +5,20 @@
 class GoFeatureFlagCli < Formula
   desc "A command line tool to manage GO Feature Flag from your terminal"
   homepage "https://gofeatureflag.org/docs/tooling/cli"
-  version "1.41.1"
+  version "1.41.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/thomaspoignant/go-feature-flag/releases/download/v1.41.1/go-feature-flag-cli_1.41.1_Darwin_x86_64.tar.gz"
-      sha256 "9a2c58fa99901b5656d86c71121f052358fe1c4129d722df3159d4da6a6c8be0"
+      url "https://github.com/thomaspoignant/go-feature-flag/releases/download/v1.41.2/go-feature-flag-cli_1.41.2_Darwin_x86_64.tar.gz"
+      sha256 "a676cdeb02847e128bc2d4d4f0461b8f6a9ccc02757e135003440e75446a5ffc"
 
       def install
         bin.install "go-feature-flag-cli"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/thomaspoignant/go-feature-flag/releases/download/v1.41.1/go-feature-flag-cli_1.41.1_Darwin_arm64.tar.gz"
-      sha256 "f9c6a527c231a6477791995a755f41676b4a7d1575689c274373cbcf180b52cc"
+      url "https://github.com/thomaspoignant/go-feature-flag/releases/download/v1.41.2/go-feature-flag-cli_1.41.2_Darwin_arm64.tar.gz"
+      sha256 "c614327aaa71ac70a5a91e2681f19dc9550828eaedbdf32b24b146459d2c045c"
 
       def install
         bin.install "go-feature-flag-cli"
@@ -29,8 +29,8 @@ class GoFeatureFlagCli < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/thomaspoignant/go-feature-flag/releases/download/v1.41.1/go-feature-flag-cli_1.41.1_Linux_x86_64.tar.gz"
-        sha256 "a8e67bef2285871e597e8a65784047251b9aa6dc86a04949d54eeb95a8188067"
+        url "https://github.com/thomaspoignant/go-feature-flag/releases/download/v1.41.2/go-feature-flag-cli_1.41.2_Linux_x86_64.tar.gz"
+        sha256 "d3626a57f3c32457f1f9f934fd1825c9918e01ec0580317dfbe5624ef04fcf2f"
 
         def install
           bin.install "go-feature-flag-cli"
@@ -39,8 +39,8 @@ class GoFeatureFlagCli < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/thomaspoignant/go-feature-flag/releases/download/v1.41.1/go-feature-flag-cli_1.41.1_Linux_arm64.tar.gz"
-        sha256 "36d726e9e0dd4454e4403ecff9dcfb5f47bcb60211cb71be725bf18fd3d0240c"
+        url "https://github.com/thomaspoignant/go-feature-flag/releases/download/v1.41.2/go-feature-flag-cli_1.41.2_Linux_arm64.tar.gz"
+        sha256 "617365aba895dc73a22731f7371ab43feb8bbea21928b1e2645f9016fc079575"
 
         def install
           bin.install "go-feature-flag-cli"
