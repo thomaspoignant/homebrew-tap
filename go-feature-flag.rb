@@ -5,20 +5,20 @@
 class GoFeatureFlag < Formula
   desc "A stand alone server to run GO Feature Flag"
   homepage "https://gofeatureflag.org/docs/relay_proxy"
-  version "1.43.1"
+  version "1.44.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/thomaspoignant/go-feature-flag/releases/download/v1.43.1/go-feature-flag_1.43.1_Darwin_x86_64.tar.gz"
-      sha256 "ca5b17659787bc64d0abbe82dab0fbcc17f619a8859b689176296a5d5a64664b"
+      url "https://github.com/thomaspoignant/go-feature-flag/releases/download/v1.44.0/go-feature-flag_1.44.0_Darwin_x86_64.tar.gz"
+      sha256 "c097c1a12e6b885f50b14a1e860179bf7a750c8eb39d4c83f48dd1d77660ce57"
 
       def install
         bin.install "go-feature-flag"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/thomaspoignant/go-feature-flag/releases/download/v1.43.1/go-feature-flag_1.43.1_Darwin_arm64.tar.gz"
-      sha256 "ff5ca42f264620adec34d0d3d90d0aca46835426621ed40652358719325dccb2"
+      url "https://github.com/thomaspoignant/go-feature-flag/releases/download/v1.44.0/go-feature-flag_1.44.0_Darwin_arm64.tar.gz"
+      sha256 "6aeaff78f0139a18f41edacd6da4d56b96d53bb0c4e0421d3f6cd0c87a3edd87"
 
       def install
         bin.install "go-feature-flag"
@@ -29,8 +29,8 @@ class GoFeatureFlag < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/thomaspoignant/go-feature-flag/releases/download/v1.43.1/go-feature-flag_1.43.1_Linux_x86_64.tar.gz"
-        sha256 "c8a36deda4dcea090e7992d433b6c237d5f7dcf6637176832a7b50e00d8f44b7"
+        url "https://github.com/thomaspoignant/go-feature-flag/releases/download/v1.44.0/go-feature-flag_1.44.0_Linux_x86_64.tar.gz"
+        sha256 "f6d7a9f8bf43978cb186a4d6158107ed6ea2ca72fe89f3c293a8025ba2913cf2"
 
         def install
           bin.install "go-feature-flag"
@@ -39,8 +39,8 @@ class GoFeatureFlag < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/thomaspoignant/go-feature-flag/releases/download/v1.43.1/go-feature-flag_1.43.1_Linux_arm64.tar.gz"
-        sha256 "731619a06fad752f973b7d748f7c488f5da6c153ac2e2974559f6093368566b8"
+        url "https://github.com/thomaspoignant/go-feature-flag/releases/download/v1.44.0/go-feature-flag_1.44.0_Linux_arm64.tar.gz"
+        sha256 "9395ac1e134d999fe5affc636ba9082ccf97fdf2d2d2fc6ab8490b0117047efb"
 
         def install
           bin.install "go-feature-flag"
