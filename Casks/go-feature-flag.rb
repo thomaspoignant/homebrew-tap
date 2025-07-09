@@ -2,7 +2,7 @@
 cask "go-feature-flag" do
   desc "A stand alone server to run GO Feature Flag"
   homepage "https://gofeatureflag.org/docs/relay_proxy"
-  version "1.45.1"
+  version "1.45.2"
 
   livecheck do
     skip "Auto-generated on release."
@@ -12,23 +12,23 @@ cask "go-feature-flag" do
 
   on_macos do
     on_intel do
-      url "https://github.com/thomaspoignant/go-feature-flag/releases/download/v1.45.1/go-feature-flag_1.45.1_Darwin_x86_64.tar.gz"
-      sha256 "c25144c53d754a9a08f8514fdea5aefb0d5bccb497f232d4ed431f73377f6330"
+      url "https://github.com/thomaspoignant/go-feature-flag/releases/download/v1.45.2/go-feature-flag_1.45.2_Darwin_x86_64.tar.gz"
+      sha256 "9d7f66446f0d881d1db5d685d49146f7922d23301fae6043440ee1f436a80b3c"
     end
     on_arm do
-      url "https://github.com/thomaspoignant/go-feature-flag/releases/download/v1.45.1/go-feature-flag_1.45.1_Darwin_arm64.tar.gz"
-      sha256 "5cf4f7e639f1aff8d29d3555b9f2ec19e647d483e60b69a8df4c871fa738f998"
+      url "https://github.com/thomaspoignant/go-feature-flag/releases/download/v1.45.2/go-feature-flag_1.45.2_Darwin_arm64.tar.gz"
+      sha256 "e675d3dbb950fbf5d22e6cf0e51c7c5d0b8c4a60ea9553024b785c3b84631e9e"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/thomaspoignant/go-feature-flag/releases/download/v1.45.1/go-feature-flag_1.45.1_Linux_x86_64.tar.gz"
-      sha256 "2c1a093bb49f89acc9712f191a5bb48211b53a21ab0d9a18362520c8c956217f"
+      url "https://github.com/thomaspoignant/go-feature-flag/releases/download/v1.45.2/go-feature-flag_1.45.2_Linux_x86_64.tar.gz"
+      sha256 "aaeed3bf5f08bf9c9c8d71337341101be1f7fbaca54efcd9b350e6412d6d4413"
     end
     on_arm do
-      url "https://github.com/thomaspoignant/go-feature-flag/releases/download/v1.45.1/go-feature-flag_1.45.1_Linux_arm64.tar.gz"
-      sha256 "7e7cd4e4b0b3012301649787bcff79421a99819aaa25606570d17a53562f88fb"
+      url "https://github.com/thomaspoignant/go-feature-flag/releases/download/v1.45.2/go-feature-flag_1.45.2_Linux_arm64.tar.gz"
+      sha256 "dae986eb61f7468c2b41353453c5651f59da7ba3c6621df8ca571029a3836ad8"
     end
   end
 
