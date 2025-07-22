@@ -2,7 +2,7 @@
 cask "go-feature-flag-relay-proxy" do
   desc "A stand alone server to run GO Feature Flag"
   homepage "https://gofeatureflag.org/docs/relay_proxy"
-  version "1.45.4"
+  version "1.45.5"
 
   livecheck do
     skip "Auto-generated on release."
@@ -12,23 +12,23 @@ cask "go-feature-flag-relay-proxy" do
 
   on_macos do
     on_intel do
-      url "https://github.com/thomaspoignant/go-feature-flag/releases/download/v1.45.4/go-feature-flag-relay-proxy_1.45.4_Darwin_x86_64.tar.gz"
-      sha256 "431bbd5b26e96006c7502f109a6723e4602beb8f1f4d71cb3a2e92839c89b01a"
+      url "https://github.com/thomaspoignant/go-feature-flag/releases/download/v1.45.5/go-feature-flag-relay-proxy_1.45.5_Darwin_x86_64.tar.gz"
+      sha256 "790189aefe986bea96fe220991dd9c865b8e645be8446fb00150f60c2e2e7332"
     end
     on_arm do
-      url "https://github.com/thomaspoignant/go-feature-flag/releases/download/v1.45.4/go-feature-flag-relay-proxy_1.45.4_Darwin_arm64.tar.gz"
-      sha256 "8f4a7ced09d964e04501a8f16fd87a02e019622f8e80d97711cccd7d30c8a93f"
+      url "https://github.com/thomaspoignant/go-feature-flag/releases/download/v1.45.5/go-feature-flag-relay-proxy_1.45.5_Darwin_arm64.tar.gz"
+      sha256 "dab1ef840ac5a50ab7daf554014b6be2d09540f6cee0a17a129dbf8f6a0ad931"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/thomaspoignant/go-feature-flag/releases/download/v1.45.4/go-feature-flag-relay-proxy_1.45.4_Linux_x86_64.tar.gz"
-      sha256 "b7f223c147c96686dd89bd487ec92bca3354c892f209653c17c85c3dfeda984b"
+      url "https://github.com/thomaspoignant/go-feature-flag/releases/download/v1.45.5/go-feature-flag-relay-proxy_1.45.5_Linux_x86_64.tar.gz"
+      sha256 "193082911170cfa1bb9a2dd2c902fcbb78e813cf3d98221a4a66daeb301e2d71"
     end
     on_arm do
-      url "https://github.com/thomaspoignant/go-feature-flag/releases/download/v1.45.4/go-feature-flag-relay-proxy_1.45.4_Linux_arm64.tar.gz"
-      sha256 "2141101cb669d8b3a6a6f2333220ef999a4e8d2302c31f94c9900ca04d609c76"
+      url "https://github.com/thomaspoignant/go-feature-flag/releases/download/v1.45.5/go-feature-flag-relay-proxy_1.45.5_Linux_arm64.tar.gz"
+      sha256 "af104bc9ae1da7a17b5a1aa7b0ce37e4568616f572b14cb16eafb1913b61e73b"
     end
   end
 
