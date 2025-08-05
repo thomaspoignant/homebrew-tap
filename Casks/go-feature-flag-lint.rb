@@ -2,7 +2,7 @@
 cask "go-feature-flag-lint" do
   desc "A command line tool to lint your feature flag configuration file"
   homepage "https://gofeatureflag.org/docs/tooling/linter"
-  version "1.45.5"
+  version "1.45.6"
 
   livecheck do
     skip "Auto-generated on release."
@@ -12,23 +12,23 @@ cask "go-feature-flag-lint" do
 
   on_macos do
     on_intel do
-      url "https://github.com/thomaspoignant/go-feature-flag/releases/download/v1.45.5/go-feature-flag-lint_1.45.5_Darwin_x86_64.tar.gz"
-      sha256 "49af9e1add3380e30756f2a1cc7770b7641785b6e08f7400796208e25bc8844c"
+      url "https://github.com/thomaspoignant/go-feature-flag/releases/download/v1.45.6/go-feature-flag-lint_1.45.6_Darwin_x86_64.tar.gz"
+      sha256 "27eefc1764d86371fa33f7e0bb0c97a6b7cea7cf7cfa31ddff7be666f209cd46"
     end
     on_arm do
-      url "https://github.com/thomaspoignant/go-feature-flag/releases/download/v1.45.5/go-feature-flag-lint_1.45.5_Darwin_arm64.tar.gz"
-      sha256 "1a0315624601fe8c1813442af36a98e3aa3570146ca0a653734dabcecb2ee93e"
+      url "https://github.com/thomaspoignant/go-feature-flag/releases/download/v1.45.6/go-feature-flag-lint_1.45.6_Darwin_arm64.tar.gz"
+      sha256 "17d546518f1379c41e10be184e76f4fe1d6ebf7dc9dd34b12162363dfaad3137"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/thomaspoignant/go-feature-flag/releases/download/v1.45.5/go-feature-flag-lint_1.45.5_Linux_x86_64.tar.gz"
-      sha256 "7513c177d39386cd464834dde417fc87a035c229b34034ab23f53ebe9723c6a1"
+      url "https://github.com/thomaspoignant/go-feature-flag/releases/download/v1.45.6/go-feature-flag-lint_1.45.6_Linux_x86_64.tar.gz"
+      sha256 "3c4d947d68d6fdc0b5ff23adaf517e4214ce8190c67794c868823a049a1997c1"
     end
     on_arm do
-      url "https://github.com/thomaspoignant/go-feature-flag/releases/download/v1.45.5/go-feature-flag-lint_1.45.5_Linux_arm64.tar.gz"
-      sha256 "cdd16229b38e110b580a0c45ae72d85145c019105ff6a708816f3d17c321458f"
+      url "https://github.com/thomaspoignant/go-feature-flag/releases/download/v1.45.6/go-feature-flag-lint_1.45.6_Linux_arm64.tar.gz"
+      sha256 "a0a8fe47934d26e3b7e1f19fbc3cfde35593fa9c55d7dfece24199f7cba1c08f"
     end
   end
 
