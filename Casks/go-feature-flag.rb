@@ -3,7 +3,7 @@ cask "go-feature-flag" do
   name "go-feature-flag"
   desc "A stand alone server to run GO Feature Flag"
   homepage "https://gofeatureflag.org/docs/relay_proxy"
-  version "1.46.0"
+  version "1.46.1"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "go-feature-flag" do
   on_macos do
     on_intel do
       url "https://github.com/thomaspoignant/go-feature-flag/releases/download/v#{version}/go-feature-flag_#{version}_Darwin_x86_64.tar.gz"
-      sha256 "4dc4f882af6ee7631f08f661d4945c808f7c12aeb185c11abf75efcd7b99eddd"
+      sha256 "6db1afebd964e370ba23ce13da527912ca0460e785b1c02d26d38ccdd4766b7a"
     end
     on_arm do
       url "https://github.com/thomaspoignant/go-feature-flag/releases/download/v#{version}/go-feature-flag_#{version}_Darwin_arm64.tar.gz"
-      sha256 "84ba6599675eea087afe735abcd9ac42f9908b04276e6c088ed29504761d4aeb"
+      sha256 "367e8d34bc2b16ce2b54898cdb5884229c5dbf9564699a3649a22f1e0b694b0d"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/thomaspoignant/go-feature-flag/releases/download/v#{version}/go-feature-flag_#{version}_Linux_x86_64.tar.gz"
-      sha256 "e2e374cb80c6fe17725f466c40393b232768397045ec533c24e382b34affb6ad"
+      sha256 "505dabed2bc12f9f0263c15f7707b984a66c1892f6c7e33ab7cd36b20685c959"
     end
     on_arm do
       url "https://github.com/thomaspoignant/go-feature-flag/releases/download/v#{version}/go-feature-flag_#{version}_Linux_arm64.tar.gz"
-      sha256 "4d350829685d77225f10212283333d2c907c3d0b198b59a2739f0be7823adc78"
+      sha256 "163921a85e66238455c363845959135e3ad89f244d25c597b4b2c4afcec868ec"
     end
   end
 
