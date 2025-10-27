@@ -3,7 +3,7 @@ cask "go-feature-flag-cli" do
   name "go-feature-flag-cli"
   desc "A command line tool to manage GO Feature Flag from your terminal"
   homepage "https://gofeatureflag.org/docs/tooling/cli"
-  version "1.46.1"
+  version "1.47.1"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "go-feature-flag-cli" do
   on_macos do
     on_intel do
       url "https://github.com/thomaspoignant/go-feature-flag/releases/download/v#{version}/go-feature-flag-cli_#{version}_Darwin_x86_64.tar.gz"
-      sha256 "8d8d7e1368bcf73e6da99a8cdb2e85b3a32c5248bb5be5c47f09217dadece64f"
+      sha256 "8a8bfb3db0e56564a4064bc212d56bd54941e7e938ae3c741894a08abd507bb4"
     end
     on_arm do
       url "https://github.com/thomaspoignant/go-feature-flag/releases/download/v#{version}/go-feature-flag-cli_#{version}_Darwin_arm64.tar.gz"
-      sha256 "7cd5c2113a66f20ec2c962061a9fe50205dda8c4520c1c0aa38c9cd8889f59d3"
+      sha256 "ec5338dbbe9f6ea8c1e1e73eca97907e044ea130806cd5c617345dddae7b3993"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/thomaspoignant/go-feature-flag/releases/download/v#{version}/go-feature-flag-cli_#{version}_Linux_x86_64.tar.gz"
-      sha256 "737fcd4d8f100fed0f2ff1c7e13766147199a0ae1e16470cf3decd32b74fc43a"
+      sha256 "c1ea261a43c09070c67be0a01c4a6167f115aa3e4de2575246bef5e4e6d02ff1"
     end
     on_arm do
       url "https://github.com/thomaspoignant/go-feature-flag/releases/download/v#{version}/go-feature-flag-cli_#{version}_Linux_arm64.tar.gz"
-      sha256 "537f29e259fda4755787c843b84c284da2ba30397277abe55f697539e64ac81b"
+      sha256 "717048d01178f01a3fb95d2bc1823c1f80e7add0ec3eec1c6cab2aeb20d5e4fb"
     end
   end
 
