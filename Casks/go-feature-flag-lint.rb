@@ -3,7 +3,7 @@ cask "go-feature-flag-lint" do
   name "go-feature-flag-lint"
   desc "A command line tool to lint your feature flag configuration file"
   homepage "https://gofeatureflag.org/docs/tooling/linter"
-  version "1.50.1"
+  version "1.51.0"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "go-feature-flag-lint" do
   on_macos do
     on_intel do
       url "https://github.com/thomaspoignant/go-feature-flag/releases/download/v#{version}/go-feature-flag-lint_#{version}_Darwin_x86_64.tar.gz"
-      sha256 "bb985f7760b9374ebacc4c26599fe73a89b4794f26c026a55ea877ba2c0c8c7f"
+      sha256 "1067ad449002378605dbb05d0b7917691262587d528f7bca17ce627cd8198dbb"
     end
     on_arm do
       url "https://github.com/thomaspoignant/go-feature-flag/releases/download/v#{version}/go-feature-flag-lint_#{version}_Darwin_arm64.tar.gz"
-      sha256 "c1ba2cdb7708737ebd3ae81979b5c9c175242eac871feecbd865d1d11d0d5538"
+      sha256 "d0ba5facf6eb8a4323a86bdb7bbfc1b420f37448cb053f439894067f525cf06d"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/thomaspoignant/go-feature-flag/releases/download/v#{version}/go-feature-flag-lint_#{version}_Linux_x86_64.tar.gz"
-      sha256 "7c66c8ba35bdd06607e3e3ab0fb44f288060e690090eb076c5102ca43ae68e4f"
+      sha256 "2da6d5277701b6b78b29a22585615936e4acd21d02ada30c3bd5c866f172fd3d"
     end
     on_arm do
       url "https://github.com/thomaspoignant/go-feature-flag/releases/download/v#{version}/go-feature-flag-lint_#{version}_Linux_arm64.tar.gz"
-      sha256 "4f44dc46ee92e800c72072b5733a55dccbcedc255c96a69715d457abcbd6cecc"
+      sha256 "15de56e2ad8cc034f32e75668ca725c8f85796ba4b39be6d3ace1a3bdaa0ec8d"
     end
   end
 
